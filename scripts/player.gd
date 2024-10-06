@@ -52,11 +52,6 @@ func player_movement(delta):
 		play_anim(0)
 	else:
 		play_anim(1)
-	#if (velocity.x == 1 and velocity.y == 0) or (velocity.x == 1 and velocity.y == 1):
-		
-	#if velocity == Vector2(1,1):
-		#print("1,1 velocity")
-		
 	# updates position depending on velocity
 	velocity = velocity.normalized() * speed
 	#position += velocity * delta
@@ -88,7 +83,6 @@ func play_anim(movement):
 			anim.play("front_walk")
 		elif movement == 0:
 			anim.play("front_idle")
-
 
 func _on_cliff_body_entered(body: Node2D) -> void:
 	pass # Replace with function body.

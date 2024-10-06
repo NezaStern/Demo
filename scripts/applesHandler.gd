@@ -1,18 +1,11 @@
 extends Node2D
 
-# stores apples count score
-#var appleCount = 0
-
-#@export var lableTxt : Label
-
 var spawns = 0
 
 # preload apple scene
 var red_apple_instance = preload("res://scenes/red_apple.tscn")
 var yellow_apple_instance = preload("res://scenes/yellow_apple.tscn")
 var green_apple_instance = preload("res://scenes/green_apple.tscn")
-
-#var appleScore = preload($appleScore)
 
 #screen vars 
 var screenSize = 0
@@ -24,9 +17,6 @@ var random = RandomNumberGenerator.new()
 
 # number of apples spawned at once
 var spawnNum = 30
-
-# get apple score node
-#var scoreTxt = 0
 
 var label = 0
 
@@ -46,27 +36,14 @@ func _ready() -> void:
 	scene_green_apple = preload("res://scenes/green_apple.tscn").instantiate()
 	add_child(scene_green_apple)
 	
-	#scene_apple.connect("applePressed", Callable(self, "test"))
-	
 	#get screen size
 	screenSize = get_viewport().get_visible_rect().size
 	screen_hight = screenSize.x
 	screen_width = screenSize.y
 	#print("width: " , screenSize.x , " , hight: " , screenSize.y)
-	
-	#var appleNode = get_node("res://scripts/apple_button.gd")
-	#print(appleNode)
-	#$appleScoreLable.text = "kill me"
-	#print(Spremenljivke.current_scene)
-	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	#print(Spremenljivke.current_scene)
-	#if Spremenljivke.current_scene == "sortiranje":
-	#	print("appppppellllllllllllllllllllllllll")
-	#	spawn()
-	#	Spremenljivke.transition_scene = false
 	if Input.is_action_pressed("ui_cancel"):
 		Spremenljivke.switchback()
 	
@@ -111,14 +88,3 @@ func get_random_pos():
 	
 func updateScore():
 	pass
-	#print(appleCount)
-	#label.text = "Score: " + str(appleCount)
-	#var label = get_node("Label")
-	#label = get_node("appleScoreLable")
-	#if label != null:
-	#	print("found")
-	#	label.text = "Score: " + str(appleCount)
-	#else:
-	#	print("Label node not found!")
-	
-	
