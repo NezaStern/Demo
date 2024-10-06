@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj5hixcs0nrng"]
+
+[ext_resource type="Texture2D" uid="uid://bl44aogcfwqt2" path="res://sprites/temp/biggerBack.png" id="1_2w68s"]
+[ext_resource type="Script" path="res://scripts/applesHandler.gd" id="1_c4bkh"]
+
+[node name="sortiranje" type="Node2D"]
+script = ExtResource("1_c4bkh")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_2w68s")
+
+[node name="appleScoreLable" type="Label" parent="."]
+offset_right = 85.0
+offset_bottom = 47.0
+theme_override_font_sizes/font_size = 20
+text = "Score: 0"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0

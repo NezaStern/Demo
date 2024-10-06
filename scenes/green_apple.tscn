@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://xqny5h01q6fs"]
+
+[ext_resource type="Texture2D" uid="uid://cdts47f8qrumq" path="res://sprites/taski_grafike/jabloko_g.png" id="1_iswlf"]
+[ext_resource type="Script" path="res://scripts/apple_button.gd" id="2_odt8t"]
+
+[node name="green_apple" type="Node2D"]
+position = Vector2(-300, -300)
+
+[node name="greenButton" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_iswlf")
+stretch_mode = 0
+script = ExtResource("2_odt8t")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[connection signal="pressed" from="greenButton" to="greenButton" method="_on_texture_button_pressed"]

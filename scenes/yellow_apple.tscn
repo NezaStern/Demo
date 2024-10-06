@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://diup52l7ft40a"]
+
+[ext_resource type="Texture2D" uid="uid://diqgm5duesfq3" path="res://sprites/taski_grafike/jabolgo_y.png" id="1_cqdys"]
+[ext_resource type="Script" path="res://scripts/apple_button.gd" id="2_3xw3i"]
+
+[node name="yellow_apple" type="Node2D"]
+position = Vector2(-300, -300)
+
+[node name="yellowButton" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_cqdys")
+stretch_mode = 0
+script = ExtResource("2_3xw3i")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[connection signal="pressed" from="yellowButton" to="yellowButton" method="_on_texture_button_pressed"]

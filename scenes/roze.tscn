@@ -1,0 +1,100 @@
+[gd_scene load_steps=10 format=3 uid="uid://bg6lnbwck8xlt"]
+
+[ext_resource type="Texture2D" uid="uid://6diusjjl8brh" path="res://art/objects/roza_sveza.png" id="1_221lb"]
+[ext_resource type="Texture2D" uid="uid://26c846ioq1gl" path="res://art/objects/roza_napol ovenela.png" id="2_anv4g"]
+[ext_resource type="Texture2D" uid="uid://dxbbw87kkj5ak" path="res://art/objects/roza_ovenela.png" id="3_74tfe"]
+[ext_resource type="Texture2D" uid="uid://c7s02sj05b6in" path="res://art/objects/orhideja_sveza.png" id="4_42ees"]
+[ext_resource type="Texture2D" uid="uid://dnox6ykm31m6k" path="res://art/objects/orhideja_napol ovenela.png" id="5_ffhho"]
+[ext_resource type="Texture2D" uid="uid://m66ojwa66cs8" path="res://art/objects/orhideja_ovenela.png" id="6_n7ch1"]
+[ext_resource type="Texture2D" uid="uid://dkll6p8hjlx1k" path="res://art/objects/tulipan_svez.png" id="7_5666x"]
+[ext_resource type="Texture2D" uid="uid://dyuy4lup2ck7c" path="res://art/objects/tulipan_napol ovenel.png" id="8_r68b0"]
+[ext_resource type="Texture2D" uid="uid://d2e0peh71eql0" path="res://art/objects/tulipan_ovenel.png" id="9_mog7a"]
+
+[node name="roze" type="Node2D"]
+
+[node name="images" type="Node" parent="."]
+
+[node name="soncnica" type="Node" parent="images"]
+
+[node name="roza" type="TextureRect" parent="images/soncnica"]
+offset_left = 210.706
+offset_top = 29.9322
+offset_right = 230.706
+offset_bottom = 49.9322
+texture = ExtResource("1_221lb")
+expand_mode = 1
+
+[node name="roza2" type="TextureRect" parent="images/soncnica"]
+offset_left = 208.669
+offset_top = 53.668
+offset_right = 230.669
+offset_bottom = 75.668
+texture = ExtResource("2_anv4g")
+expand_mode = 1
+
+[node name="roza3" type="TextureRect" parent="images/soncnica"]
+offset_left = 209.026
+offset_top = 74.9934
+offset_right = 231.026
+offset_bottom = 96.9934
+texture = ExtResource("3_74tfe")
+expand_mode = 1
+
+[node name="orhideja" type="Node" parent="images"]
+
+[node name="roza" type="TextureRect" parent="images/orhideja"]
+offset_left = 217.789
+offset_top = 19.681
+offset_right = 254.789
+offset_bottom = 56.681
+texture = ExtResource("4_42ees")
+expand_mode = 1
+
+[node name="roza2" type="TextureRect" parent="images/orhideja"]
+offset_left = 219.018
+offset_top = 46.9191
+offset_right = 252.018
+offset_bottom = 79.9191
+texture = ExtResource("5_ffhho")
+expand_mode = 1
+
+[node name="roza3" type="TextureRect" parent="images/orhideja"]
+offset_left = 218.07
+offset_top = 65.2165
+offset_right = 254.07
+offset_bottom = 101.216
+texture = ExtResource("6_n7ch1")
+expand_mode = 1
+
+[node name="tulipan" type="Node" parent="images"]
+
+[node name="roza" type="TextureRect" parent="images/tulipan"]
+offset_left = 240.875
+offset_top = 29.9805
+offset_right = 262.875
+offset_bottom = 51.9805
+texture = ExtResource("7_5666x")
+expand_mode = 1
+
+[node name="roza2" type="TextureRect" parent="images/tulipan"]
+offset_left = 238.515
+offset_top = 52.4055
+offset_right = 262.515
+offset_bottom = 76.4055
+texture = ExtResource("8_r68b0")
+expand_mode = 1
+
+[node name="roza3" type="TextureRect" parent="images/tulipan"]
+offset_left = 237.89
+offset_top = 71.7815
+offset_right = 263.89
+offset_bottom = 97.7815
+texture = ExtResource("9_mog7a")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 5.35468
+offset_top = 3.46478
+offset_right = 638.355
+offset_bottom = 300.465
+color = Color(0.605301, 0.796283, 0.881278, 0.882353)
